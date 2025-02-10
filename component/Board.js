@@ -22,9 +22,9 @@ const Board = () => {
     return false;
   };
 
+
   const handleClick = (row, col) => {
     const newBoard = board.map(rowArr => rowArr.slice()); // Deep copy
-
     if (currentPlayer === "V") {
       if (row + 1 < 10 && !newBoard[row][col] && !newBoard[row + 1][col]) {
         newBoard[row][col] = "V";
@@ -109,8 +109,8 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   cell: {
-    width: 40,
-    height: 40,
+    width: 37,
+    height: 37,
     borderWidth: 1,
     borderColor: "#ccc",
     backgroundColor: "#f4f4f4",
