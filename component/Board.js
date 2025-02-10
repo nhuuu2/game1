@@ -49,7 +49,7 @@ const Board = () => {
     setCurrentPlayer(prev => {
       const nextPlayer = prev === "V" ? "H" : "V";
       if (!hasValidMoves(newBoard, nextPlayer)) {
-        setMessage(`${prev} wins!`);
+        setMessage(`${prev} win!`);
         return prev;
       }
       return nextPlayer;
